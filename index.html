@@ -23,8 +23,9 @@
     <!-- Header Section Start -->
     <header class="p-15 bg-white">
         <div class="container flex align-center">
-            <nav class="navbar flex align-center justify-start col-12 gap-50">
-                <ul class="flex align-center justify-space-between col-4 list-style-none">
+            <nav class="navbar flex align-center justify-start col-12 gap-50" id="myTopnav">
+                <input type="checkbox" id="check1">
+                <ul class="flex align-center justify-space-between col-4 list-style-none topnav">
                     <li>
                         <a href="#" title="Home" class="font-25 txt-primary">Home</a>
                     </li>
@@ -40,7 +41,7 @@
                         <img src="./assets/images/logo.png" alt="logo" width="88" height="86">
                     </a>
                 </div>
-                <ul class="flex align-center justify-space-between col-4 list-style-none">
+                <ul class="flex align-center justify-space-between col-4 list-style-none topnav">
                     <li>
                         <a href="#" title="Blog" class="font-25 txt-primary">Blog</a>
                     </li>
@@ -51,6 +52,7 @@
                         <a href="#" title="Contact" class="font-25 txt-primary">Contact</a>
                     </li>
                 </ul>
+                <div class="fa-btn"><label for="check1" class="checkbtn1"><i class="fa fa-bars"></i></label></div>
             </nav>
         </div>
     </header>
@@ -59,8 +61,8 @@
     <!-- Banner Section Start -->
     <section class="banner pt-33 position-relative overflow-hidden">
         <div class="container">
-            <div class="banner-wrapper flex align-center col-12">
-                <div class="col-5">
+            <div class="banner-wrapper flex align-center col-12 flex-lg-col-rev">
+                <div class="col-5 col-lg-12 text-lg-center">
                     <h1 class="font-92 ff-opensans-bold pb-79">Have a Nice Meal</h1>
                     <p class="ff-opensans-regular lh-33 pb-75">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, officia deserunt mollit anim id est laborum.</p>
                     <button class="ff-opensans-bold btn-read position-relative bg-transperent">Read More</button>
@@ -76,22 +78,22 @@
     <!-- Card Section Start -->
     <section class="card-section pt-117">
         <div class="container">
-            <div class="flex align-center justify-space-between pb-84">
-                <div class="card gap-29 align-center flex flex-column">
+            <div class="flex align-center justify-space-between pb-84 flex-lg-col gap-lg-50">
+                <div class="card card-lg-border px-lg-20 col-lg-10 gap-29 align-center flex flex-column">
                     <img src="./assets/images/dish_1.svg" alt="Dish-1" width="215" height="232">
                     <div class="text-center">
                         <h4 class="ff-opensans-bold font-25 mb-15">Duis aute</h4>
                         <p class="ff-opensans-regular">sint occaecat cupidatat non</p>
                     </div>
                 </div>
-                <div class="card gap-29 align-center flex flex-column">
+                <div class="card card-lg-border px-lg-20 col-lg-10 gap-29 align-center flex flex-column">
                     <img src="./assets/images/dish_2.svg" alt="Dish-2" width="238" height="237">
                     <div class="text-center">
                         <h4 class="ff-opensans-bold font-25 mb-15">Duis aute</h4>
                         <p class="ff-opensans-regular">sint occaecat cupidatat non</p>
                     </div>
                 </div>
-                <div class="card gap-34 align-center flex flex-column">
+                <div class="card card-lg-border px-lg-20 col-lg-10 gap-34 align-center flex flex-column">
                     <img src="./assets/images/dish_3.svg" alt="Dish-3" width="205" height="206">
                     <div class="text-center">
                         <h4 class="ff-opensans-bold font-25 mb-15">Duis aute</h4>
@@ -104,12 +106,12 @@
     <!-- Card Section End -->
 
     <!-- img-txt Section start -->
-    <section class="cta-img position-relative overflow-hidden">
-        <div class="flex align-center">
+    <section class="cta-img position-relative overflow-hidden py-lg-30">
+        <div class="flex align-center flex-lg-col gap-lg-50">
             <div class="img-wrapper">
                 <img src="./assets/images/img_txt.svg" alt="img" width="623" height="779">
             </div>
-            <div class="txt-wrapper ml-108 col-5">
+            <div class="txt-wrapper ml-108 col-5 col-lg-9 text-lg-center">
                 <h2 class="font-75 ff-opensans-bold pb-84">Best Meal Brunch in NYC</h2>
                 <p class="pb-40 lh-33">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. Volutpat lacus laoreet non curabitur gravida. Dictum sit amet justo donec enim. Eu scelerisque felis imperdiet proin fermentum leo vel. Tincidunt lobortis feugiat vivamus at augue. Porttitor massa id neque aliquam vestibulum.</p>
                 <p class="text-underline"><a href="#" title="Read Story" class="txt-primary">Read Story</a></p>
@@ -126,32 +128,56 @@
                 <p class="text-center lh-33">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
             </div>
         </div>
-        <div class="flex gap-47 card-padding">
-            <div class="img-card flex col-4">
-                <img src="./assets/images/slider_1.svg" alt="img" width="240" height="312">
-                <div class="card-txt">
-                    <h3 class="font-33 ff-opensans-bold pb-31">Americano</h3>
-                    <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
-                    <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
+         <div class="flex gap-47 card-padding">
+                <div class="img-card flex col-4">
+                    <img src="./assets/images/slider_1.svg" alt="img" width="240" height="312">
+                    <div class="card-txt">
+                        <h3 class="font-33 ff-opensans-bold pb-31">Americano</h3>
+                        <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
+                    </div>
+                </div>
+                <div class="img-card flex col-4">
+                    <img src="./assets/images/slider_2.svg" alt="img" width="240" height="312">
+                    <div class="card-txt">
+                        <h3 class="font-33 ff-opensans-bold pb-31">Long Black</h3>
+                        <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
+                    </div>
+                </div>
+                <div class="img-card flex col-4">
+                    <img src="./assets/images/slider_3.svg" alt="img" width="240" height="312">
+                    <div class="card-txt">
+                        <h3 class="font-33 ff-opensans-bold pb-31">Espresso</h3>
+                        <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
+                    </div>
+                </div>
+                <div class="img-card flex col-4">
+                    <img src="./assets/images/slider_1.svg" alt="img" width="240" height="312">
+                    <div class="card-txt">
+                        <h3 class="font-33 ff-opensans-bold pb-31">Americano</h3>
+                        <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
+                    </div>
+                </div>
+                <div class="img-card flex col-4">
+                    <img src="./assets/images/slider_2.svg" alt="img" width="240" height="312">
+                    <div class="card-txt">
+                        <h3 class="font-33 ff-opensans-bold pb-31">Long Black</h3>
+                        <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
+                    </div>
+                </div>
+                <div class="img-card flex col-4">
+                    <img src="./assets/images/slider_3.svg" alt="img" width="240" height="312">
+                    <div class="card-txt">
+                        <h3 class="font-33 ff-opensans-bold pb-31">Espresso</h3>
+                        <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
+                        <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
+                    </div>
                 </div>
             </div>
-            <div class="img-card flex col-4">
-                <img src="./assets/images/slider_2.svg" alt="img" width="240" height="312">
-                <div class="card-txt">
-                    <h3 class="font-33 ff-opensans-bold pb-31">Long Black</h3>
-                    <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
-                    <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
-                </div>
-            </div>
-            <div class="img-card flex col-4">
-                <img src="./assets/images/slider_3.svg" alt="img" width="240" height="312">
-                <div class="card-txt">
-                    <h3 class="font-33 ff-opensans-bold pb-31">Espresso</h3>
-                    <p class="font-12 lh-16 pb-40">Volutpat lacus laoreet non curabitur. Ullamcorper dignissim cras tincidunt lobortis feugiat vivamus at augue eget. Suscipit adipiscing bibendum est ultricies integer</p>
-                    <button class="font-14 ff-opensans-bold btn-bg btn-order position-relative bg-transperent">Order Now</button>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- Menu Slider end -->
 
@@ -162,8 +188,8 @@
                 <h2 class="ff-opensans-bold font-58">Store</h2>
                 <p class="text-center lh-33">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
             </div>
-            <div class="visit-cards pt-62 pb-111 flex gap-60 justify-center">
-                <div class="img-card col-3 flex flex-column align-center position-relative">
+            <div class="visit-cards pt-62 pb-111 flex gap-60 justify-center flex-md-col align-center">
+                <div class="img-card col-3 col-lg-10 flex flex-column align-center position-relative">
                     <img src="./assets/images/store-card-1.svg" alt="img" width="351" height="278" class="col-12">
                     <div class="position-relative">
                         <div class="store-btn-wrapper lg-btn-bg p-10 position-absolute">
@@ -175,7 +201,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-card col-3 flex flex-column align-center position-relative">
+                <div class="img-card col-3 col-lg-10 flex flex-column align-center position-relative">
                     <img src="./assets/images/store-card-3.svg" alt="img" width="351" height="278" class="col-12">
                     <div class="position-relative">
                         <div class="store-btn-wrapper lg-btn-bg p-10 position-absolute">
@@ -187,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="img-card col-3 flex flex-column align-center position-relative">
+                <div class="img-card col-3 col-lg-10 flex flex-column align-center position-relative">
                     <img src="./assets/images/store-card-2.svg" alt="img" width="351" height="278" class="col-12">
                     <div class="position-relative">
                         <div class="store-btn-wrapper lg-btn-bg p-10 position-absolute">
@@ -207,16 +233,16 @@
    <!-- company-profile section start -->
    <section class="company-profile pt-95 pb-95">
     <div class="container">
-        <div class="flex profile-wrapper align-center justify-space-between col-12">
-        <div class="video-wrapper col-5">
-            <video width="727" height="461" controls>
+        <div class="flex profile-wrapper align-center justify-space-between col-12 flex-lg-col">
+        <div class="video-wrapper col-5 col-lg-9 text-center">
+            <video width="727" height="461" controls class="col-lg-12">
                 <source src="./assets/video/food.mp4" type="video/mp4">
             </video>
         </div>
-        <div class="col-3 pt-50">
+        <div class="col-3 pt-50 col-lg-9 text-lg-center">
             <h3 class="font-50 ff-opensans-bold pb-40">Company Profile</h3>
             <p class="lh-33 pb-40">Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Dictum fusce ut placerat orci nulla pellentesque dignissim enim sit. </p>
-            <div class="social-icon flex gap-34">
+            <div class="social-icon flex gap-34 justify-lg-center">
                 <a class="link-social-facebook" href="#" title="social-link"><i class="fa-brands fa-facebook-f"></i></i></a>
                 <a class="link-social-insta" href="#" title="social-link"><i class="fa-brands fa-instagram"></i></a>
                 <a class="link-social-twitter" href="#" title="social-link"><i class="fa-brands fa-twitter"></i></a>
@@ -229,17 +255,17 @@
 
     <!-- Contact Us Start -->
     <section class="contact-us position-relative overflow-hidden">
-        <div class="flex col-12 align-center">
-            <div class="col-6">
+        <div class="flex col-12 align-center flex-md-col gap-lg-50">
+            <div class="col-6 col-lg-12">
                 <iframe width="100%" height="767" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Alsace+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/distance-area-calculator.html"></a></iframe>
             </div>
-            <div class="col-6 contact-us-form py-70">
+            <div class="col-6 contact-us-form py-70 col-lg-12 text-lg-center">
                 <h3 class="font-58 ff-opensans-bold pb-67">Contact Us</h3>
                 <form class="col-12 user-form">
                     <input type="text" placeholder="Your Name" class="col-8 bg-input border-input font-21 mb-31">
                     <input type="text" placeholder="Gender" class="col-8 bg-input border-input font-21 mb-31">
                     <textarea name="Message" id="" class="col-8 bg-input border-input font-21 mb-66" rows="5" placeholder="Messages"></textarea>
-                    <div class="btn-wrapper">
+                    <div class="btn-wrapper pb-md-40">
                         <button type="submit" class="btn-bg bg-transperent ff-opensans-bold btn-read btn-send-msg position-relative">Send Message</button>    
                     </div>
                 </form>
@@ -250,11 +276,13 @@
 
     <!-- Footer Start -->
     <footer class="footer lg-btn-bg">
-        <div class="flex col-12 align-center justify-evenly">
-            <div class="col-1">
-                <img src="./assets/images/logo_footer.svg" alt="logo" width="139" height="137">
+        <div class="flex col-12 align-center justify-evenly flex-md-wrap">
+            <div class="col-1 col-md-2 pb-md-40">
+                <a href="#" title="Home">
+                    <img src="./assets/images/logo_footer.svg" alt="logo" width="139" height="137">
+                </a>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-md-9 pb-md-40">
                 <h4 class="font-25 ff-opensans-bold pb-40">Your Company</h4>
                 <p class="font-17 lh-25 pb-40">Halimun Street 25
                     Jakarta, Indonesia
@@ -262,7 +290,7 @@
                 </p>
                 <p class="font-17"><a href="#" title="Website" class="txt-primary">www.yourdomain.com</a></p>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-md-2 col-sm-3 pb-sm-20">
                 <p class="font-17 ff-opensans-bold pb-15">Sitemap</p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Home">Home</a></p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="About">About</a></p>
@@ -271,7 +299,7 @@
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Store">Store</a></p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Contact">Contact</a></p>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-md-2 col-sm-3 pb-sm-20">
                 <p class="font-17 ff-opensans-bold pb-15">Lorem Ipsum</p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Neque">Neque</a></p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Suspendisse">Suspendisse</a></p>
@@ -280,7 +308,7 @@
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Tincidunt">Tincidunt</a></p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Enim lobortis">Enim lobortis</a></p>
             </div>
-            <div class="col-1">
+            <div class="col-1 col-md-2 col-sm-3 pb-sm-20">
                 <p class="font-17 ff-opensans-bold pb-15">Sit Amet</p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Neque">Neque</a></p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Suspendisse">Suspendisse</a></p>
@@ -289,7 +317,7 @@
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Tincidunt">Tincidunt</a></p>
                 <p class="font-17 pb-14"><a href="#" class="txt-primary" title="Enim lobortis">Enim lobortis</a></p>
             </div>
-            <div class="col-2">
+            <div class="col-2 col-md-4 col-sm-10">
                 <img src="./assets/images/logo.png" alt="logo" width="69" height="67" class="mb-25">
                 <p class="font-17 lh-25 mb-31">Copyright ©  2020 Freepik Company S.L. All rights reserved.</p>
                 <div class="social-icon-footer flex gap-34">
@@ -301,8 +329,55 @@
         </div>
     </footer>
     <!-- Footer End -->
+
+    <!-- Navbar scripts -->
+  
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.card-padding').slick({
+                    dots: true,
+                    prevArrow: false,
+                    nextArrow: false,
+                    infinite: false,
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    responsive: [
+                    {
+                        breakpoint: 1400,
+                        settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        },
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                        },
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                        },
+                    },
+                    ],
+                });
+            })
+    </script>
 </body>
 </html>
