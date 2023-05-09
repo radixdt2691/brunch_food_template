@@ -698,7 +698,7 @@ header .navbar ul li a:hover {
 }
 
 .card-txt {
-    padding: 54px 42px;
+    padding: 47px 37px;
 }
 
 .card-padding {
@@ -901,9 +901,23 @@ header .navbar ul li a:hover {
 .slick-initialized .slick-slide {
     display: flex !important;
 }
-
-.slick-dots li.slick-active button:before {
-    color: var(--yellow) !important;
+.slick-dots li.slick-active button:before, .slick-dots li button:before{
+ display: none;
+}
+.slick-dots li.slick-active button{
+    background: var(--yellow) !important;
+}
+.slick-dots li button{
+width: 15px !important;
+height: 15px !important;
+background-color: #fff !important;
+border-radius: 7px !important;
+border: 1px solid var(--yellow) !important;
+padding: 5px !important;
+}
+.slick-track{
+    display: flex !important;
+    gap: 45px !important;
 }
 
 /* Media Query start */
